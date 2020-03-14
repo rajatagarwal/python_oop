@@ -39,6 +39,3 @@ print(emp_2.fullname())
 # We can do call a method using Employee class as well, but in that case we need to pass emp_1 instance as the parameter explicitly. Both syntaxes mentioned below works exactly same
 print(Employee.fullname(emp_1))
 print(emp_1.fullname())             # works same as above with less code. 
-
-
-# We could also do like this to run this.

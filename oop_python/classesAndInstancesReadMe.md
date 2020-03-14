@@ -24,6 +24,8 @@ This is also a good use case for a class because all the clients can share some 
 ## Instance Variables and Class Variables
 Instances variables contains data that are unique to the instance.
 
+
+## Code Example 
 ```
 class Employee:
 
@@ -38,4 +40,14 @@ class Employee:
 
 emp_1 = Employee('Rajat', 'Agrawal', 50000)
 emp_2 = Employee('Test', 'User', 56000)
+```
+
+Basically when you call a method in a class it passes the Employee instance as a parameter to the method (to tell method which instance this method execution is for). 
+By using above syntax it implicitly passes emp_1 as a parameter when you call fullname() method. So that we must pass "self" as a parameter to the method inside class, 
+otherwise it would throw error like "fullname() takes 0 positional arguments but 1 was given", because emp_1.fullname() implicitly passes emp_1 as an parameter.
+
+We can do call a method using Employee class as well, but in that case we need to pass emp_1 instance as the parameter explicitly. Both syntaxes mentioned below works exactly same
+```
+print(Employee.fullname(emp_1))
+print(emp_1.fullname())             # works same as above with less code. 
 ```
