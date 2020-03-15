@@ -21,10 +21,6 @@ This is also a good use case for a class because all the clients can share some 
 
 ##### So a class is basically a blueprint for creating instances.
 
-## Instance Variables and Class Variables
-Instances variables contains data that are unique to the instance.
-
-
 ## Code Example 
 ```
 class Employee:
@@ -51,3 +47,8 @@ We can do call a method using Employee class as well, but in that case we need t
 print(Employee.fullname(emp_1))
 print(emp_1.fullname())             # works same as above with less code. 
 ```
+
+## Instance Variables and Class Variables
+Instances variables contains data that are unique to the instance. In the above example first_name, last_name, email and pay are instance variables.
+
+Class variables are the variables which are shared between all the instances in a class.
